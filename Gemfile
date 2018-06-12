@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11.3'                  # Use Puma as the app server
 gem 'turbolinks', '~> 5.0'               # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'sdoc', '0.4.0', group: :doc
 gem 'coffee-rails', '~> 4.2'
+gem 'bootstrap-sass', '3.2.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.9'
