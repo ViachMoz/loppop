@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.valid?
       @user.save
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to user_path(@user)  
     else
@@ -31,7 +32,7 @@ class UsersController < ApplicationController
 
   private
     def current_user
-      @user = User.find(params[:id])
+      @user ||= User.find(params[:id])
     end  
 
     def user_params
