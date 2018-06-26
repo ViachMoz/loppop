@@ -8,6 +8,10 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def edit
+    @user = current_user
+  end
+
   def new
     @user = User.new
   end
@@ -21,6 +25,16 @@ class UsersController < ApplicationController
       redirect_to user_path(@user)  
     else
       render :new
+    end
+  end
+
+  def update
+    @user = current_user
+    if @user.update_attributes(user_params)
+      flash[:success] = "Profile updated"
+      redirect_to @user
+    else
+      render 'edit'
     end
   end
 
