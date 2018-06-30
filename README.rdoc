@@ -1,5 +1,4 @@
 == README
-# Ruby on Rails для начинающих: "hello, world!"
-Это первое приложение для
-[*RubyonRailsTutorial*](http://www.railstutorial.org/)
-[Майкл Хартл](http://www.michaelhartl.com/).
+This sample react app made by Viacheslav Mozulevskyi
+====================================================
+You can see this app here [* Loppop Sample App *](https://loppop.herokuapp.com/)
